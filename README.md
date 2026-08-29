@@ -1,8 +1,7 @@
 # Hadamard-M
 
 An erratum on one 1991 construction, and one Hadamard matrix built by the sound
-part of the same paper. This repository is the Miyamoto layer of a small
-AI-piloted mathematics laboratory. The order-515 entry of Miyamoto 1991 is the
+part of the same paper. The order-515 entry of Miyamoto 1991 is the
 only claim in the literature at Hadamard order 2060, and it is not supported by
 that paper's own machinery. The paper's main theorem, applied to a publicly
 announced Hadamard matrix of order 1948, gives an explicit Hadamard matrix of

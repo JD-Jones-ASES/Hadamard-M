@@ -9,7 +9,7 @@ abstract: >-
   matrix of order 1948, gives an explicit Hadamard matrix of order 7796,
   verified in exact integer arithmetic. AI-generated results with a human
   managing the workflow — produced by Claude Code (Fable 5, Anthropic);
-  external review by GPT 5.6 (OpenAI); two outside Grok (xAI) reports
+  external reviews by GPT 5.6 (OpenAI) and by Grok (xAI), intaken and
   adjudicated; see DISCLOSURE.md.
 version: 0.1.0
 date-released: 2026-08-29

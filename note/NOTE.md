@@ -64,11 +64,11 @@ artifact also gives H(15592) = 2·7796; that matrix is **stated, not built**
 here. Labels: PROVEN-BY-CERTIFICATE for the artifact,
 REPORTED-FROM-AUDITED-TABLE for the status of the order.
 
-**What this laboratory contributes.** The theorem in (ii) is Miyamoto's, and
-it was already implemented by Cati and Pasechnik. The input matrix is
-Alpöge's group's. What is ours is the audit that spotted the propagation gap
-between a 2026-08-12 announcement and a 2025-08-30 table, the erratum in (i),
-the verification, and the certificate. The closure in (ii) is a direct
+**What was done here.** The theorem in (ii) is Miyamoto's, and it was already
+implemented by Cati and Pasechnik. The input matrix is Alpöge's group's. What
+was done here: the audit that spotted the propagation gap between a
+2026-08-12 announcement and a 2025-08-30 table, the erratum in (i), the
+verification, and the certificate. The closure in (ii) is a direct
 corollary of a public announcement against a dated table; the propagation is
 mechanical, and a parallel closure elsewhere since 2026-08-12 is entirely
 plausible and would not be visible from here.
@@ -121,6 +121,15 @@ obtained from Baumert–Hall arrays together with list (2); **515 is in that
 list**. The remaining-unknowns list on p. 107 omits 515. So the paper claims
 H(4·515) = H(2060) through Proposition 1 with n = 103 and t = 5, and the
 load-bearing input is WT(103).
+
+One reading point must be settled before naming the engine. The printed
+header of list (2) credits Corollary 2. But Corollary 2 (p. 99) outputs
+Hadamard matrices of M-partition of order 4(4m + 1) — odd part ≡ 1 (mod 4)
+only — so it cannot produce the list's entries 83, 103, 127 or 151, all
+≡ 3 (mod 4). The same parity excludes Corollary 3 (order 4(4t + 1)). The only
+engine in the paper that reaches an M-partition matrix at odd part
+≡ 3 (mod 4) is Corollary 4, through Theorem 6. The header is loose; the
+engine at 103 is Corollary 4, and the rest of this section addresses it.
 
 ### 2.4 The paper's engine for WT(103): its Corollary 4
 
@@ -234,9 +243,14 @@ Label: PROVED-BY-DERIVATION.
 
 ### 2.6 The typo on p. 101
 
-The output order printed for Corollary 4 is 4(2m + 3). The displayed
-C₂-matrix has blocks of order m, and the paper's Main Theorem applied to these
-ingredients returns order 4(2m + 1), so 4(2m + 3) is a typo.
+The printed statement of Corollary 4 ends, verbatim:
+
+> then there is an Hadamard matrix of order 4(2m + 3) and M-partition.
+
+The displayed C₂-matrix has blocks of order m, the corollary's own proof
+substitutes D₁, D₂, D₂, D₁ into the arrays (5.9) of Theorem 6, and Theorem 6
+(p. 100) prints its output as 4(2m + 1). So 4(2m + 3) is a typo for
+4(2m + 1).
 
 The reading does not change the conclusion. Reaching n = 103 through the
 printed 4(2m + 3) would need m = 50; the D-blocks would then have order 50,
@@ -545,7 +559,7 @@ Hadamard matrix of order 7796.
 ## 5. Credits and citations
 
 The theorem in section 3 is Miyamoto's. The input matrix is Alpöge's group's.
-The verification, the erratum and the certificate are this laboratory's.
+The verification, the erratum, and the certificate were carried out here.
 
 - M. Miyamoto, *A construction of Hadamard matrices*, J. Combin. Theory Ser. A
   **57** (1991) 86–108. The subject of section 2; the source of Theorem 5 /

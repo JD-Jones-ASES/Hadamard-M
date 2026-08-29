@@ -1,8 +1,8 @@
 # Disclosure
 
 AI-generated results with a human managing the workflow. Produced by Claude
-Code (Fable 5, Anthropic); external review by GPT 5.6 (OpenAI); two outside
-Grok (xAI) reports adjudicated.
+Code (Fable 5, Anthropic); external reviews by GPT 5.6 (OpenAI) and by
+Grok (xAI), intaken and adjudicated.
 
 ## What the AI stations did
 
@@ -11,8 +11,8 @@ its main theorem rather than its quotation; the parity obstruction that isolates
 where the order-515 entry fails, and the check that the obstruction does not
 touch the main theorem; the decode of the announced order-1948 matrix and the
 assembler that rebuilds it; the construction and verification of the order-7796
-matrix; the verifier and the certificate. An outside station reviewed the claims
-and the hedging. Two further outside reports were relayed in and adjudicated
+matrix; the verifier and the certificate. Outside stations reviewed the claims
+and the hedging; their reports were relayed in and adjudicated
 here against primary sources; where a report and a source disagreed, the source
 governed.
 
