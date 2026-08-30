@@ -1,5 +1,11 @@
 # Disclosure
 
+This repository carries two results: an erratum establishing that Miyamoto
+1991's printed claim at order 515 — hence at Hadamard order 2060 — is
+unsupported by that paper's own machinery, and an explicit Hadamard matrix of
+order 7796 built by the same paper's main theorem and verified in exact integer
+arithmetic.
+
 AI-generated results with a human managing the workflow. Produced by Claude
 Code (Fable 5, Anthropic); external reviews by GPT 5.6 (OpenAI) and by
 Grok (xAI), intaken and adjudicated.
@@ -28,10 +34,13 @@ and in the copyright line; it appears in no derivation.
 
 The two results are checked in different ways, and both are open to a reader.
 
-The erratum is a proof. It is the obstruction and its consequence as stated in
-the README, in full in the note (Propositions 2–4), and it is verified by
-reading them against the paper. No computation is involved and none would
-settle it.
+The erratum is a proof: the obstruction and its consequence, stated in the
+README and given in full in the note (Propositions 2–4). A reader verifies it
+by reading those propositions against the paper. The obstruction and the
+emptiness of the ingredient class it forbids are additionally machine-checked
+in the companion Lean development,
+[Hadamard-formal](https://github.com/JD-Jones-ASES/Hadamard-formal); the
+transcriptions from the printed paper remain human-audited.
 
 The construction is a certificate. The trust chain is `verify/verify.py`, which
 accepts a matrix only if the matrix is square, has every entry in {+1, −1}, and
@@ -65,5 +74,7 @@ welcome via GitHub issues.
   arrays the construction and the erratum both refer to.
 - **Cati and Pasechnik**, *A database of constructions of Hadamard matrices*,
   arXiv:2411.18897v2 (2025-08-30) — the status table against which order 7796
-  is reported, and the source of the recorded doubt about order 4·515. A
-  database records what its authors knew, not what exists.
+  is reported, a database recording what its authors knew, not what exists;
+  and the independent record of doubt about order 4·515, where they were
+  unable to verify the construction. The erratum here supplies the specific
+  reason.

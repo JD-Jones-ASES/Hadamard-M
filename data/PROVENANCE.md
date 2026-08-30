@@ -43,14 +43,16 @@ at row 604.
 
 **The law this repository follows.** Any equality claim about the H(1948) input
 cites the announcement URL and the tape `sha256`, and the canonical `sha256` of
-the rebuilt matrix. No claim of byte-equality against the mirrored matrix file
-is made anywhere in this repository, because that file is incomplete.
+the rebuilt matrix. Because the mirrored matrix file is incomplete, no claim of
+byte-equality against it is made anywhere in this repository; the tape digest
+and the pinned rebuild digest are what bind the input here.
 
 ## Credit
 
-The H(1948) payload is Alpoge's group's announcement of 2026-08-12. This
-repository holds the decode, the replay, the composite construction of
-`certs/01-h7796`, and the certificate. It does not contribute the input.
+The H(1948) payload is Alpoge's group's announcement of 2026-08-12, and this
+repository does not contribute the input. What it holds is the firsthand
+decode, the replay, the composite construction of `certs/01-h7796`, and the
+certificate.
 
 The announcement tape itself is deliberately not redistributed here: the URL,
 length, digest and offsets above let anyone retrieve and check it, and the
@@ -61,6 +63,5 @@ repository uses. License boundaries are in LICENSE-DOCS.md.
 
 At the public flip, the dated-table source was re-checked: arXiv:2411.18897
 remains at v2 (2025-08-30), the version every reading in this repository
-cites. The table-relative claims stand as written; the table records what its
-authors knew on its date, and later closures elsewhere would not be visible
-from here.
+cites. The table-relative claims stand as written, each scoped to what the
+table's authors recorded on its date.

@@ -58,7 +58,7 @@ are never committed. Peak disk 61 MB.
 | 1 | grounding gate: the *same* code path at `q = 5` from the Sylvester `H(4)` and at `q = 257` from the Sylvester `H(256)`, each output green at a pinned digest. At `q = 5` the packed-integer dot product is calibrated against a naive `O(n³)` triple loop, and the output is re-checked by an independent popcount path. |
 | 2 | rebuilds `H(1948)` from `data/h1948-seeds.json` and greens it at its pinned digest before use |
 | 3 | `q = 1949`: `C Cᵗ = qI` at order 1950; the E-form entry for entry; `e(C1) = 1, e(C2) = 0, e(C4) = 1` in rows and columns; `C1C1ᵗ + C2C2ᵗ = qI − 2J`, `C2ᵗC2 + C4C4ᵗ = qI − 2J`, `C1C2 = C2C4ᵗ`; `K Kᵗ = 1948·I` and all six K-block identities; (4.1), (4.2), (4.9) `U Uᵗ = nI − 2(I₄ ⊗ J_m)` at order 3896, (4.10) `V Vᵗ = nI` at order 3896. Then assemble, write, verify, pin. |
-| 4 | negative control: one flipped entry of the verified `H(20)` must be rejected by `verify.py` with exit 1. The checks are not vacuous. |
+| 4 | negative control: one flipped entry of the verified `H(20)` must be rejected by `verify.py` with exit 1 |
 | 5 | prints the openness reading with its label |
 
 Four green verdict lines, verbatim as `verify.py` prints them:
@@ -83,9 +83,7 @@ the same theorem, so the generalisation to `q = 1949` did not drift.
 
 Miyamoto's prose is scaffolding here, never load-bearing: the engine is
 certified against a known answer, every hypothesis is re-checked on the actual
-matrices at the `q` being run, and the output is accepted only by
-`verify.py`. If the paper were wrong, this certificate would still be right, or
-it would fail loudly.
+matrices at the `q` being run, and the output is accepted only by `verify.py`.
 
 ## The openness of order 7796, which is a separate claim with a separate label
 
@@ -113,21 +111,23 @@ The wording this repository uses, and does not strengthen:
 
 ## Credit, and what is not claimed here
 
-The theorem is Miyamoto's. Cati and Pasechnik already implement it; their
-footnote credits it at `q = 853, 1093, 1669, 1789, 1913, 1933, 2053, 2269,
-2341`. What was missing on 2025-08-30 was `H(1948)`, and that came from the
-announcement of 2026-08-12. This closure is a direct corollary of the second
-against the first. This laboratory contributes the firsthand decode of the
-input, the standard-library implementation, and this certificate. It does not
-contribute the theorem or the input.
+The theorem is Miyamoto's and the input matrix is Alpoge's group's; this
+laboratory contributes neither. Cati and Pasechnik already implement the
+theorem; their footnote credits it at `q = 853, 1093, 1669, 1789, 1913, 1933,
+2053, 2269, 2341`. What was missing on 2025-08-30 was `H(1948)`, and that came
+from the announcement of 2026-08-12. This closure is a direct corollary of the
+second against the first.
 
 The propagation is mechanical, and the two inputs are public. A parallel
-closure elsewhere is plausible and would not be visible from here.
+closure elsewhere is plausible and would not be visible from here. What this
+laboratory contributes is the firsthand decode of the input, the
+standard-library implementation, and this certificate.
 
 ## Scope
 
-This certificate binds the existence of `H(7796)`, its reproducibility from
-this repository, and the correctness of the substitution into Miyamoto's
-Theorem 5 / Corollary 1. Nothing more. It does not prove that the order was
-open; it reports that status from a dated table, with the label above.
-`H(15592)` is stated as a corollary and is not built.
+`H(15592)` is stated as a corollary of the artifact above by Sylvester
+doubling, and is not built here. The openness of order 7796 is not proved here
+either; it is reported from a dated table, with the label above. What this
+certificate binds, and nothing more, is the existence of `H(7796)`, its
+reproducibility from this repository plus `data/`, and the correctness of the
+substitution into Miyamoto's Theorem 5 / Corollary 1.

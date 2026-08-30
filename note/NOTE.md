@@ -12,7 +12,7 @@ the rest.
 | label | meaning |
 | --- | --- |
 | PROVEN-BY-CERTIFICATE | the object exists and rebuilds from this repository; `verify/verify.py` accepts it at a pinned digest |
-| PROVED-BY-DERIVATION | a derivation carried out here from the printed paper; finite checks where they apply; no artifact binds it |
+| PROVED-BY-DERIVATION | a derivation carried out here from the printed paper; finite checks where they apply; the obstruction of §2.5 and its empty-class corollary are kernel-checked in the companion Lean development, Hadamard-formal (§5), and the transcriptions from the printed text are human-audited |
 | REPORTED-FROM-AUDITED-TABLE | a status read from a dated third-party table; not proven here |
 
 **Notation.** An Hadamard matrix of order `n`, written H(n), is an `n × n`
@@ -29,8 +29,9 @@ is exact integer arithmetic.
 Two results, independent of one another.
 
 **(i) The 1991 paper's printed claim covering order 515 — hence Hadamard order
-2060 — does not survive verification.** The claim runs through the paper's
-section 7: an Hadamard matrix of M-partition of order 4·103 = 412, substituted
+2060 — does not survive verification, and the same test decides three more of
+its printed entries.** The claim runs through the paper's section 7: an
+Hadamard matrix of M-partition of order 4·103 = 412, substituted
 into a Baumert–Hall array of order 5, would give H(4·515) = H(2060). The paper
 produces its order-412 object from its Corollary 4 (p. 101), whose second
 ingredient is a C₂-matrix. At the parameter needed here, m = 51, that
@@ -39,11 +40,15 @@ the diagonal, and every row sum 0. No such matrix exists: the −1 positions
 would form a 25-regular graph on 51 vertices, and 51·25 is odd. The class is
 empty by the handshake lemma, so the printed route does not deliver an
 order-103 Williamson-type quadruple, and the 515 entry it feeds is unsupported
-(Proposition 3, Proposition 4). This matters for one reason: the 1991 paper
-carries the only claim at order 2060 located in our dated audit of the
-literature (audit closed 2026-08-29), and the maintained database
-flagged it — Cati and Pasechnik record that they were, at that entry, "unable
-to verify these constructions". The obstruction below is the specific reason.
+(Proposition 3, Proposition 4). The same test is sharp on the paper's own
+list-(2) entries at n ≡ 3 (mod 4): it admits 83 and rules out 103, 127 and 151
+(§2.5). Three of the four printed entries at that parity, and every list-(3)
+entry drawn from them, are therefore unsupported by the paper's machinery. An
+independent record flags exactly this entry: the 1991 paper carries the
+only claim at order 2060 located in our dated audit of the literature (audit
+closed 2026-08-29), and the maintained database flagged it — Cati and Pasechnik
+record that they were, at that entry, "unable to verify these constructions".
+The obstruction below is the specific reason.
 Label: PROVED-BY-DERIVATION.
 
 **(ii) The paper's main theorem is sound, and applied at q = 1949 it produces
@@ -65,18 +70,22 @@ artifact also gives H(15592) = 2·7796; that matrix is **stated, not built**
 here. Labels: PROVEN-BY-CERTIFICATE for the artifact,
 REPORTED-FROM-AUDITED-TABLE for the status of the order.
 
-**What was done here.** The theorem in (ii) is Miyamoto's, and it was already
-implemented by Cati and Pasechnik. The input matrix is Alpöge's group's. What
-was done here: the audit that spotted the propagation gap between a
-2026-08-12 announcement and a 2025-08-30 table, the erratum in (i), the
-verification, and the certificate. The closure in (ii) is a direct
-corollary of a public announcement against a dated table; the propagation is
-mechanical, and a parallel closure elsewhere since 2026-08-12 is entirely
-plausible and would not be visible from here.
+**What was done here.** The erratum in (i), proved from the printed text; the
+audit that spotted the propagation gap between a 2026-08-12 announcement and a
+2025-08-30 table; the construction and verification of the order-7796 matrix;
+and the certificate that replays both. The theorem in (ii) is Miyamoto's, and
+it was already implemented by Cati and Pasechnik. The input matrix is Alpöge's
+group's. The closure in (ii) is a direct corollary of a public announcement
+against a dated table; the two limits on that corollary are stated with the
+certificate, in `certs/01-h7796/NOTES.md`.
 
-**Who this is addressed to.** The maintainers of the audited open-order table
-are the natural readers of both results: (i) corrects the provenance of a
-table entry, and (ii) supplies a new one.
+**Who this is addressed to.** Researchers in Hadamard matrices and
+combinatorial designs. Result (i) decides four printed entries of a 1991 JCTA
+construction and supplies the specific reason behind a maintained database's
+"unable to verify" flag; result (ii) supplies an explicit, verified matrix at
+an order that database records as unresolved. The maintainers of the audited
+open-order table are among the natural readers: for them, (i) corrects the
+provenance of a table entry, and (ii) supplies a new one.
 
 ---
 
@@ -276,8 +285,18 @@ produced.
 
 Order 2060 is not open: an Hadamard matrix of order 2060 was posted publicly
 on 2026-08-23, credited to Schneider. That closure is unrelated to the 1991
-claim, and this note certifies nothing about it. What the erratum changes is
-the provenance of the table entry, not the status of the order.
+claim, and this note certifies nothing about it.
+
+What the erratum establishes stands beside that closure. The only claim at
+order 2060 located in the dated audit above is the 1991 paper's, and it is
+unsupported by the paper's own machinery: on the audited record the order
+carried that claim, and nothing else, from 1991 until the construction of
+2026-08-23 settled the order by other means — thirty-five years in which the
+literature's entry at 2060 rested on a route its own paper does not deliver.
+The maintained database's "unable to verify" flag on the 4·515 entry now has
+its specific reason: the obstruction of §2.5, whose statement and empty-class
+corollary are kernel-checked in the companion Lean development, Hadamard-formal
+(§5).
 
 ### 2.8 What survives
 
@@ -395,8 +414,8 @@ VERDICT: HADAMARD order=1948 all 1896378 row pairs orthogonal
 canonical_sha256=fddc841ebf951f6e17e939551d058ea5df046251ea065b5f6e7ee2fd8d0f62ce
 ```
 
-before the matrix is consumed. No flattering input: an input that fails the
-trust chain stops the run.
+before the matrix is consumed. An input that fails the trust chain stops the
+run.
 
 A public mirror of the announcement (`github.com/foocker/Hadamard668`, created
 2026-08-13) carries a copy of the tape whose digest matches the one above. Its
@@ -448,13 +467,11 @@ The claim wording this laboratory uses, and does not strengthen:
 > in our audit (audit closed 2026-08-29; re-checked at release date). A
 > database records what its authors knew, not what exists.
 
-Two limits on that sentence, both binding. A database is a record of what its
-authors knew in 2025-08, not a non-existence proof; someone may hold an
-unpublished construction. And the closure here is mechanical: the same two
-public inputs — the 2026-08-12 announcement and Miyamoto's theorem, already
-implemented by Cati and Pasechnik — were available to anyone from 2026-08-12
-onwards, so an independent closure elsewhere in that window is plausible and
-would not be visible from here.
+The two binding limits on that sentence — that a database records a state of
+knowledge in 2025-08, and that the propagation from the 2026-08-12 announcement
+is mechanical enough that an independent closure elsewhere in that window would
+not be visible from here — are stated with the certificate, in
+`certs/01-h7796/NOTES.md`.
 
 ---
 
@@ -493,10 +510,9 @@ artifact runs on bare `python3`. Four stages:
   **before** the matrix is used.
 - **B — the grounding gate.** Runs the *same* code path at q = 5 and q = 257
   from Sylvester inputs H(4) and H(256), producing H(20) and H(1028) at pinned
-  digests. This is the part that makes the main run credible: the engine is
-  exercised at a size where the answer is independently known. The gate also
-  carries a **negative control** — one entry of a built matrix is flipped and
-  `verify.py` must reject it, exit 1. The checks are not vacuous.
+  digests. The engine is exercised at a size where the answer is independently
+  known. The gate also carries a **negative control** — one entry of a built
+  matrix is flipped and `verify.py` must reject it, exit 1.
 - **C — the main run.** At q = 1949: C Cᵀ = q·I at order 1950; the E-form
   entry for entry; C1 and C4 symmetric with zero diagonal and C2 full ±1;
   e(C1) = 1, e(C2) = 0, e(C4) = 1 in rows and columns; the three block
@@ -545,8 +561,8 @@ the trust chain — `verify.py` is. The output was additionally cross-checked
 once by a separate reader computing exact Gram entries for 300 randomly chosen
 rows against all 7796, with every off-diagonal entry 0.
 
-This is one order, not several. That two assemblers built it is a remark about
-confidence, not a second result.
+The construction settles one order; the second assembler is a confidence check
+on that one artifact.
 
 ### 4.6 What is claimed, and what is not
 
@@ -594,6 +610,12 @@ The verification, the erratum, and the certificate were carried out here.
   for the doubling corollary.
 - The Hadamard matrix of order 2060 posted publicly on 2026-08-23 is credited
   to Schneider; it is referred to in §2.7 only, and nothing here certifies it.
+- The companion Lean 4 / Mathlib formalization,
+  `github.com/JD-Jones-ASES/Hadamard-formal`. Its public theorems
+  `handshake_mod_four` and `no_handshake_matrix` are Proposition 3 of §2.5 and
+  the emptiness of the class that proposition forbids, kernel-checked; the
+  transcriptions of §2.2–§2.4 from the printed paper are not part of that
+  development and remain human-audited premises, as §2.1 records.
 
 Licensing and the AI-station disclosure are in the repository root:
 `LICENSE`, `CITATION.cff`, `DISCLOSURE.md`.

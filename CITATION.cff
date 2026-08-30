@@ -2,12 +2,15 @@ cff-version: 1.2.0
 message: "If you use these results, cite them via this metadata."
 title: "Hadamard-M: an erratum at order 515, and an explicit Hadamard matrix of order 7796"
 abstract: >-
-  An erratum on Miyamoto's 1991 construction at order 515, the only claim in
-  the literature at Hadamard order 2060: a parity obstruction shows the
-  paper's Corollary 4 cannot supply the order-103 ingredient the entry needs.
-  The same paper's main theorem, applied to a publicly announced Hadamard
-  matrix of order 1948, gives an explicit Hadamard matrix of order 7796,
-  verified in exact integer arithmetic. AI-generated results with a human
+  Two results on Miyamoto's 1991 construction of Hadamard matrices. First, an
+  erratum at order 515 — the only claim at Hadamard order 2060 located in our
+  dated audit of the literature: a parity obstruction shows that the paper's
+  Corollary 4 cannot supply the order-103 ingredient the entry needs, and the
+  same test decides the paper's printed entries at 83, 103, 127 and 151,
+  admitting 83 and ruling out the other three. Second, the same paper's main
+  theorem, applied to a publicly announced Hadamard matrix of order 1948, gives
+  an explicit Hadamard matrix of order 7796, verified in exact integer
+  arithmetic at a pinned digest. AI-generated results with a human
   managing the workflow — produced by Claude Code (Fable 5, Anthropic);
   external reviews by GPT 5.6 (OpenAI) and by Grok (xAI), intaken and
   adjudicated; see DISCLOSURE.md.
