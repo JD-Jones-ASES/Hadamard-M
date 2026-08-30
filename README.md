@@ -48,8 +48,8 @@ that depends on it is unsupported. ∎
 The obstruction is specific, not blanket. At n = 83 the hypothesis is
 satisfiable, since m = 41 ≡ 1 (mod 4), and there the construction goes through.
 The printed output order 4(2m + 3) on page 101 appears to be a typo for
-4(2m + 1); under either reading order 103 is out of range. Corollary 2 is a
-statement about this paper's machinery, not a nonexistence proof: a
+4(2m + 1); under either reading order 103 is out of range. The consequence is
+a statement about this paper's machinery, not a nonexistence proof: a
 Williamson-type quadruple of order 103 from another source is not excluded, and
 the paper supplies none. The erratum is an argument, not a computation. The
 note states it in full.
