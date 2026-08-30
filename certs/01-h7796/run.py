@@ -760,7 +760,10 @@ def stage_gate(outdir):
 
 
 def stage_input(outdir):
-    """Stage 2: rebuild H(1948) from the banked seeds and green it."""
+    """Stage 2: rebuild H(1948) from the banked seeds and green it. Returns
+    None if any of its checks failed, so the composite is never attempted on
+    an input that failed the trust chain."""
+    fails_before = len(FAIL)
     log("STAGE 2 -- rebuild the H(1948) input from data/h1948-seeds.json")
     with open(DATA, encoding="ascii") as fh:
         bank = json.load(fh)
@@ -800,6 +803,8 @@ def stage_input(outdir):
           rc == 0 and "order=1948" in line and H1948_SHA in line
           and got == H1948_SHA)
     os.unlink(path)
+    if len(FAIL) > fails_before:
+        return None
     return rows
 
 
@@ -893,7 +898,11 @@ def main():
     h1948 = stage_input(OUTDIR)
     print()
     if not args.gate_only:
-        stage_target(OUTDIR, h1948)
+        if h1948 is None:
+            print("  STAGE 3 SKIPPED -- the H(1948) input failed the trust "
+                  "chain; the composite is not attempted on it.")
+        else:
+            stage_target(OUTDIR, h1948)
         print()
     stage_control(OUTDIR, h20)
     print()

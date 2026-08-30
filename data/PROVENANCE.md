@@ -49,5 +49,10 @@ is made anywhere in this repository, because that file is incomplete.
 ## Credit
 
 The H(1948) payload is Alpoge's group's announcement of 2026-08-12. This
-repository contributes the decode, the replay, the composite construction of
+repository holds the decode, the replay, the composite construction of
 `certs/01-h7796`, and the certificate. It does not contribute the input.
+
+The announcement tape itself is deliberately not redistributed here: the URL,
+length, digest and offsets above let anyone retrieve and check it, and the
+banked extract in `data/h1948-seeds.json` is the 1948-character slice this
+repository uses. License boundaries are in LICENSE-DOCS.md.

@@ -40,7 +40,8 @@ would form a 25-regular graph on 51 vertices, and 51·25 is odd. The class is
 empty by the handshake lemma, so the printed route does not deliver an
 order-103 Williamson-type quadruple, and the 515 entry it feeds is unsupported
 (Proposition 3, Proposition 4). This matters for one reason: the 1991 paper
-was the only literature claim at order 2060, and the maintained database
+carries the only claim at order 2060 located in our dated audit of the
+literature (audit closed 2026-08-29), and the maintained database
 flagged it — Cati and Pasechnik record that they were, at that entry, "unable
 to verify these constructions". The obstruction below is the specific reason.
 Label: PROVED-BY-DERIVATION.
@@ -85,8 +86,16 @@ table entry, and (ii) supplies a new one.
 
 The 1991 paper was read here from a scan of the printed article. Page numbers
 below refer to that scan. Nothing in this section depends on any secondary
-source. The derivations are this laboratory's; where a finite check settles a
+source. The derivations were carried out here; where a finite check settles a
 point, the check is stated so a reader can repeat it.
+
+The scan itself is not redistributed in this repository — it is a copyrighted
+journal article. Every statement of the paper that the erratum relies on is
+transcribed below with its page number, and section 2.6 quotes the one
+load-bearing printed sentence verbatim. A reader auditing this note checks the
+transcriptions against the paper; a formalization must treat them as
+human-audited premises about the printed text. The mathematics downstream of
+the premises is machine-checkable; the faithfulness of a transcription is not.
 
 ### 2.2 Objects
 

@@ -1,9 +1,9 @@
 # Hadamard-M
 
 An erratum on one 1991 construction, and one Hadamard matrix built by the sound
-part of the same paper. The order-515 entry of Miyamoto 1991 is the
-only claim in the literature at Hadamard order 2060, and it is not supported by
-that paper's own machinery. The paper's main theorem, applied to a publicly
+part of the same paper. The order-515 entry of Miyamoto 1991 is the only claim
+at Hadamard order 2060 located in our dated audit of the literature, and it is
+not supported by that paper's own machinery. The paper's main theorem, applied to a publicly
 announced Hadamard matrix of order 1948, gives an explicit Hadamard matrix of
 order 7796, verified here in exact integer arithmetic.
 
@@ -113,8 +113,12 @@ The theorem is Miyamoto's, *A construction of Hadamard matrices*, JCTA 57
 The order-1948 matrix is from the announcement by Alpöge's group cited above.
 The audited status table is Cati and Pasechnik, arXiv:2411.18897v2 (2025-08-30).
 
-Code is MIT; see [LICENSE](LICENSE). The note and the data documentation are
-CC BY-SA 4.0. Authorship is in [DISCLOSURE.md](DISCLOSURE.md).
+Code is MIT; see [LICENSE](LICENSE). The note (`note/`) and the prose
+documentation in `data/` are CC BY-SA 4.0; see [LICENSE-DOCS](LICENSE-DOCS.md)
+for the exact boundary. The banked seeds are mathematical data extracted from
+a publicly announced payload; no license is claimed over them, and neither the
+announcement tape nor the 1991 paper's scan is redistributed here. Authorship
+is in [DISCLOSURE.md](DISCLOSURE.md).
 
 Companion repository: [Hadamard-T](https://github.com/JD-Jones-ASES/Hadamard-T),
 the T-matrix witnesses and the thirteen Hadamard orders built from them.
