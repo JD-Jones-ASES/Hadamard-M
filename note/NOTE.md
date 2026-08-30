@@ -12,7 +12,7 @@ the rest.
 | label | meaning |
 | --- | --- |
 | PROVEN-BY-CERTIFICATE | the object exists and rebuilds from this repository; `verify/verify.py` accepts it at a pinned digest |
-| PROVED-BY-DERIVATION | a derivation carried out here from the printed paper; finite checks where they apply; the obstruction of §2.5 and its empty-class corollary are kernel-checked in the companion Lean development, Hadamard-formal (§5), and the transcriptions from the printed text are human-audited |
+| PROVED-BY-DERIVATION | a derivation carried out here from the printed paper; finite checks where they apply; the obstruction of §2.5, its empty-class corollary, and the displayed form of §2.4 with its forcing step are kernel-checked in the companion Lean development, Hadamard-formal (§5), and the transcriptions from the printed text are human-audited |
 | REPORTED-FROM-AUDITED-TABLE | a status read from a dated third-party table; not proven here |
 
 **Notation.** An Hadamard matrix of order `n`, written H(n), is an `n × n`
@@ -295,9 +295,9 @@ carried that claim, and nothing else, from 1991 until the construction of
 years in which the only located entry at 2060 rested on a route its own paper
 does not deliver.
 The maintained database's "unable to verify" flag on the 4·515 entry now has
-its specific reason: the obstruction of §2.5, whose statement and empty-class
-corollary are kernel-checked in the companion Lean development, Hadamard-formal
-(§5).
+its specific reason: the obstruction of §2.5, whose statement, empty-class
+corollary, and application to the displayed form of §2.4 are kernel-checked in
+the companion Lean development, Hadamard-formal (§5).
 
 ### 2.8 What survives
 
@@ -614,7 +614,10 @@ The verification, the erratum, and the certificate were carried out here.
 - The companion Lean 4 / Mathlib formalization,
   `github.com/JD-Jones-ASES/Hadamard-formal`. Its public theorems
   `handshake_mod_four` and `no_handshake_matrix` are Proposition 3 of §2.5 and
-  the emptiness of the class that proposition forbids, kernel-checked; the
+  the emptiness of the class that proposition forbids, and `no_c2_matrix`
+  states the displayed form of §2.4 directly and proves it has no instance at
+  any positive block order not congruent to 1 (mod 4) — Proposition 2's
+  forcing step and Proposition 4's conclusion, kernel-checked; the
   transcriptions of §2.2–§2.4 from the printed paper are not part of that
   development and remain human-audited premises, as §2.1 records.
 
