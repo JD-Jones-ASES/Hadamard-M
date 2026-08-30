@@ -56,3 +56,11 @@ The announcement tape itself is deliberately not redistributed here: the URL,
 length, digest and offsets above let anyone retrieve and check it, and the
 banked extract in `data/h1948-seeds.json` is the 1948-character slice this
 repository uses. License boundaries are in LICENSE-DOCS.md.
+
+## Release re-check (2026-08-30)
+
+At the public flip, the dated-table source was re-checked: arXiv:2411.18897
+remains at v2 (2025-08-30), the version every reading in this repository
+cites. The table-relative claims stand as written; the table records what its
+authors knew on its date, and later closures elsewhere would not be visible
+from here.
