@@ -122,3 +122,6 @@ is in [DISCLOSURE.md](DISCLOSURE.md).
 
 Companion repository: [Hadamard-T](https://github.com/JD-Jones-ASES/Hadamard-T),
 the T-matrix witnesses and the thirteen Hadamard orders built from them.
+Formalization: [Hadamard-formal](https://github.com/JD-Jones-ASES/Hadamard-formal)
+— a Lean 4 / Mathlib development whose public theorems include this note's
+handshake parity obstruction (Proposition 3).
