@@ -291,8 +291,9 @@ What the erratum establishes stands beside that closure. The only claim at
 order 2060 located in the dated audit above is the 1991 paper's, and it is
 unsupported by the paper's own machinery: on the audited record the order
 carried that claim, and nothing else, from 1991 until the construction of
-2026-08-23 settled the order by other means — thirty-five years in which the
-literature's entry at 2060 rested on a route its own paper does not deliver.
+2026-08-23 settled the order by other means — on that record, thirty-five
+years in which the only located entry at 2060 rested on a route its own paper
+does not deliver.
 The maintained database's "unable to verify" flag on the 4·515 entry now has
 its specific reason: the obstruction of §2.5, whose statement and empty-class
 corollary are kernel-checked in the companion Lean development, Hadamard-formal

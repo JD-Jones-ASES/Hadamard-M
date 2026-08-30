@@ -91,7 +91,9 @@ matrices at the `q` being run, and the output is accepted only by `verify.py`.
 constructions of Hadamard matrices*, arXiv:2411.18897**v2**, 2025-08-30, Table
 4; transcribed from the arXiv LaTeX e-print and machine-diffed; retrieved
 2026-08-29). Đoković (arXiv:1008.2043, p. 1–2) records that the corresponding
-Handbook table "was not accurate even at the time of its publication".
+Handbook table "was not accurate even at the time of its publication". A
+table is not a non-existence proof; someone may hold an unpublished
+construction.
 
 The transcription is published here as `data/cp-table4-v2.json` (195 entries;
 see `data/PROVENANCE.md`), and **stage 5 reads it** rather than quoting a
