@@ -619,7 +619,8 @@ The verification, the erratum, and the certificate were carried out here.
   any positive block order not congruent to 1 (mod 4) — Proposition 2's
   forcing step and Proposition 4's conclusion, kernel-checked; the
   transcriptions of §2.2–§2.4 from the printed paper are not part of that
-  development and remain human-audited premises, as §2.1 records.
+  development and remain human-audited premises, as §2.1 records. It is
+  registered in the Palomar Registry as PALOMAR-2026-08-31-000001.
 
 Licensing and the AI-station disclosure are in the repository root:
 `LICENSE`, `CITATION.cff`, `DISCLOSURE.md`.

@@ -170,6 +170,8 @@ Companion repository: [Hadamard-T](https://github.com/JD-Jones-ASES/Hadamard-T),
 the T-matrix witnesses and the thirteen Hadamard orders built from them.
 Formalization: [Hadamard-formal](https://github.com/JD-Jones-ASES/Hadamard-formal)
 — a Lean 4 / Mathlib development whose public theorems include this note's
-handshake parity obstruction (Proposition 3, as `handshake_mod_four`) and the
-emptiness of the ingredient class it forbids (`no_handshake_matrix`), so the
-erratum's mathematical core is kernel-checked.
+handshake parity obstruction (Proposition 3, as `handshake_mod_four`), the
+emptiness of the ingredient class it forbids (`no_handshake_matrix`), and the
+displayed form of §2.4 with its forcing step (`no_c2_matrix`), so the
+erratum's mathematical core is kernel-checked. That development is registered
+in the Palomar Registry as PALOMAR-2026-08-31-000001.
